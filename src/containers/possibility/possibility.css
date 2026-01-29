@@ -1,0 +1,219 @@
+.gpt3__possibility {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.gpt3__possibility__features {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gpt3__possibility-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-left: 3rem;
+}
+.gpt3__possibility-heading h1 {
+  flex: 1 1 0;
+  max-width: 500px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0%;
+}
+.gpt3__possibility-heading p {
+  flex: 1 1 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  color: var(--color-subtext);
+}
+.gpt3__possibility__feature-container {
+  margin-right: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.gpt3__possibility__description {
+  display: flex;
+  justify-content: center;
+}
+
+.gpt3__possibility__description-inner {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 6rem);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.gpt3__possibility__description img {
+  width: min(45vw, 500px);
+  height: auto;
+  margin: 0;
+}
+
+
+.gpt3__possibility__description-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10rem;
+}
+.gpt3__possibility__description-content p:first-child {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  color: var(--color-needed);
+  max-width: 350px;
+}
+.gpt3__possibility__description-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.gpt3__possibility__description-content p:nth-of-type(2) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  color: var(--color-text);
+  max-width: 500px;
+}
+
+.gpt3__possibility__description-content p:nth-of-type(3) {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  color: var(--color-subtext);
+  max-width: 325px;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 550px) {
+
+  .gpt3__possibility__features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .gpt3__possibility-heading {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gpt3__possibility-heading h1 {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 100%;
+  }
+
+  /* 🔑 change happens here */
+  .gpt3__possibility__description-inner {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .gpt3__possibility__description img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .gpt3__possibility__description-content {
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gpt3__possibility__description-content p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 768px) {
+
+  .gpt3__possibility__features {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .gpt3__possibility-heading {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* 🔑 inner container */
+  .gpt3__possibility__description-inner {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .gpt3__possibility__description img {
+    width: 420px;
+  }
+
+  .gpt3__possibility__description-content {
+    margin-top: 0;
+    max-width: 600px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .gpt3__possibility__features {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .gpt3__possibility-heading {
+    margin-left: 0;
+    max-width: 700px;
+  }
+
+  /* 🔑 THIS is the important fix */
+  .gpt3__possibility__description-inner {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .gpt3__possibility__description img {
+    width: 380px;
+  }
+
+  .gpt3__possibility__description-content {
+    max-width: 700px;
+    margin-top: 0;
+  }
+
+  .gpt3__possibility__description-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
